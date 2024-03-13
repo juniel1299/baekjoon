@@ -9,7 +9,7 @@ public class Main {
 		int M = Integer.parseInt(reader.readLine());
 		resultLength[1] = 5;
 		resultLength[2] = 13;
-		for (int i = 3; i < N; i++) {
+		for (int i = 3; i < N; i++) { //messi(N)은 messi(N-1), 공백, messi(N-2)을 차례로 이어붙여서 만든 문자열
 			resultLength[i] = resultLength[i-1] + 1 + resultLength[i-2];
 		}
 		
@@ -37,7 +37,7 @@ public class Main {
 		return "";
 	}
 	
-	public static String baseCondition(int X) {
+	public static String baseCondition(int X) {				//출력되는 패턴 정리
 		if(X == 1) return "M";
 		if(X == 2) return "e";
 		if(X == 3 || X == 4 || X == 11 || X == 12) return "s";
