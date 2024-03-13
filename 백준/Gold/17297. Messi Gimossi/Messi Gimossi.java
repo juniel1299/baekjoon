@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-	static int N = 42; //문제에서 주어진 M의 범위((2**30)-1)를 초과하지 않는 가장 큰 수
+	static int N = 42; //((2**30)-1)를 초과하지 않는 가장 큰 수
 	static int[] resultLength = new int[N]; 
 	public static void main(String[] args) throws Exception {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
